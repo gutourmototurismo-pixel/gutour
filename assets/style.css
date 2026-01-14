@@ -19,9 +19,7 @@ body{
 /* container */
 .container{width:min(1200px, 92vw); margin:0 auto}
 
-/* =========================
-   TOPBAR / NAV
-========================= */
+/* topbar */
 .topbar{
   position:sticky; top:0; z-index:20;
   background: rgba(7,20,37,.92);
@@ -29,47 +27,14 @@ body{
 }
 .nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0}
 
-/* ✅ BRAND / LOGO (corrigido)
-   Mantém compatibilidade caso a brand volte a ser texto,
-   mas não deixa a imagem explodir/rotacionar/esticar. */
-.topbar .brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-  font-weight:900;
-  letter-spacing:.8px;
-  /* não define font-size fixo aqui para não afetar logo */
-}
-.topbar .brand .logo{
-  width:auto !important;
-  height:64px !important;      /* ajuste aqui: 36–60 */
-  max-height:64px !important;
-  max-width:260px !important;  /* evita logo enorme */
-  display:block;
-  object-fit:contain;
-  transform:none !important;   /* evita qualquer rotate/scale */
-}
-
-/* Mobile: um pouco menor */
-@media (max-width: 520px) {
-  .topbar .brand .logo{
-    height:38px !important;
-    max-height:38px !important;
-    max-width:190px !important;
-  }
-}
-
-/* (opcional/compat) se algum lugar ainda usar .brand como texto */
+/* (mantido) */
 .brand{font-weight:900; letter-spacing:.8px; font-size:24px}
 
 .navlinks{display:flex; gap:26px; font-weight:600}
 .navlinks a{color:rgba(255,255,255,.85); text-decoration:none}
 .navlinks a:hover{color:#fff}
 
-/* =========================
-   HERO
-========================= */
+/* hero */
 .hero{position:relative; min-height: 620px; display:flex; align-items:center}
 .hero-bg{
   position:absolute; inset:0;
@@ -114,9 +79,7 @@ body{
 }
 .btn-primary:hover{filter:brightness(1.03)}
 
-/* =========================
-   SECTIONS
-========================= */
+/* sections */
 .section{padding: 80px 0}
 .section-title{
   text-align:center;
@@ -149,9 +112,7 @@ body{
   .hero{min-height: 560px}
 }
 
-/* =========================
-   CARDS
-========================= */
+/* cards */
 .card{
   text-decoration:none;
   color:inherit;
@@ -204,9 +165,7 @@ body{
 .card:hover img{transform: scale(1.04)}
 .card:hover .card-title{color: var(--accent)}
 
-/* =========================
-   HOW IT WORKS
-========================= */
+/* HOW IT WORKS */
 .how{
   margin-top: 44px;
   display:grid;
@@ -229,9 +188,7 @@ body{
 .how-item h3{margin: 0 0 10px; font-size: 26px; font-weight:900}
 .how-item p{margin:0; color: var(--muted2); line-height:1.6; font-size:16px}
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 .cta{
   padding: 90px 0 60px;
   background: var(--bg);
@@ -453,9 +410,35 @@ body{
   .gallery-2x2 img { height: 290px; }
 }
 
-/* Mantém (não remove) a regra antiga caso algum HTML use .logo fora do topo */
-.logo {
-  height: 44px;
-  width: auto;
-  display: block;
+/* =========================================================
+   LOGO (TOPO) — corrigido e consistente
+========================================================= */
+
+/* O <a class="brand"> agora é o container da logo */
+.topbar .brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  line-height:0; /* evita “subir/descer” por altura de texto */
+}
+
+/* A logo em si */
+.topbar .brand .logo{
+  display:block;
+  width:auto !important;
+  height:56px !important;      /* <<< TAMANHO IDEAL: ajuste aqui se quiser (50–64) */
+  max-height:56px !important;
+  max-width:260px !important;  /* evita estourar */
+  object-fit:contain;
+  transform:none !important;
+}
+
+/* Mobile */
+@media (max-width: 520px){
+  .topbar .brand .logo{
+    height:46px !important;
+    max-height:46px !important;
+    max-width:220px !important;
+  }
 }
