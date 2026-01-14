@@ -1,155 +1,206 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>GUTOUR – Moto World Adventure</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #050b1e;
-      color: #ffffff;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: #ff6a2a;
-      font-size: 14px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: #0b1230;
-      border-radius: 12px;
-      overflow: hidden;
-      text-decoration: none;
-      color: white;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h2 {
-      margin: 0 0 8px;
-      font-size: 22px;
-    }
-
-    .card-content p {
-      margin: 0;
-      font-size: 14px;
-      color: #cfd3ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 12px;
-      color: #777;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GUTOUR — Moto World Adventure</title>
+  <meta name="description" content="Viagens de moto premium pela Europa. Rotas icônicas, grupos pequenos e experiências selecionadas." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
 
-<header>
-  <h1>GUTOUR</h1>
-  <p>Moto World Adventure</p>
-</header>
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">GUTOUR</div>
+      <nav class="navlinks">
+        <a href="#trips">Trips</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <div class="grid">
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="assets/img/hero.jpg" alt="Estradas e montanhas na Europa" />
+    <div class="hero-overlay"></div>
 
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
-      <div class="card-content">
-        <h2>Red Bull Erzbergrodeo</h2>
-        <p>Áustria · Junho 2026</p>
+    <div class="container hero-content">
+      <h1 class="hero-title">GUTOUR</h1>
+      <p class="hero-subtitle">Viagens de Moto Premium pela Europa</p>
+      <p class="hero-desc">Rotas icônicas, grupos pequenos, experiências selecionadas</p>
+
+      <a class="btn-primary" href="#trips" aria-label="Ver viagens">Ver Viagens</a>
+    </div>
+  </section>
+
+  <!-- TRIPS -->
+  <section id="trips" class="section">
+    <div class="container">
+      <h2 class="section-title">Nossas Viagens</h2>
+      <p class="section-subtitle">Roteiros cuidadosamente desenhados pelos cenários mais espetaculares da Europa</p>
+
+      <div class="grid">
+        <!-- 1 -->
+        <a class="card" href="#" aria-label="RedBull Erzbergrodeo">
+          <div class="card-media">
+            <img src="assets/img/trip-erzberg.jpg" alt="RedBull Erzbergrodeo" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>Áustria</span>
+            </div>
+            <h3 class="card-title">RedBull Erzbergrodeo</h3>
+            <div class="card-date">Junho 2026</div>
+          </div>
+        </a>
+
+        <!-- 2 -->
+        <a class="card" href="#" aria-label="Enduro GP">
+          <div class="card-media">
+            <img src="assets/img/trip-endurogp.jpg" alt="Enduro GP" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>Portugal</span>
+            </div>
+            <h3 class="card-title">Enduro GP</h3>
+            <div class="card-date">Junho 2026</div>
+          </div>
+        </a>
+
+        <!-- 3 -->
+        <a class="card" href="#" aria-label="RedBull Romaniacs">
+          <div class="card-media">
+            <img src="assets/img/trip-romaniacs.jpg" alt="RedBull Romaniacs" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>Romênia</span>
+            </div>
+            <h3 class="card-title">RedBull Romaniacs</h3>
+            <div class="card-date">Julho 2026</div>
+          </div>
+        </a>
+
+        <!-- 4 -->
+        <a class="card" href="#" aria-label="Moto GP">
+          <div class="card-media">
+            <img src="assets/img/trip-motogp.jpg" alt="Moto GP" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>Espanha</span>
+            </div>
+            <h3 class="card-title">Moto GP</h3>
+            <div class="card-date">Agosto 2026</div>
+          </div>
+        </a>
+
+        <!-- 5 -->
+        <a class="card" href="#" aria-label="MX ON Motocross das Nações">
+          <div class="card-media">
+            <img src="assets/img/trip-mxon.jpg" alt="MX ON Motocross das Nações" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>França</span>
+            </div>
+            <h3 class="card-title">MX ON Motocross das Nações</h3>
+            <div class="card-date">Outubro 2026</div>
+          </div>
+        </a>
+
+        <!-- 6 (placeholder pra fechar 2x3) -->
+        <a class="card" href="#" aria-label="Alpes & Dolomitas">
+          <div class="card-media">
+            <img src="assets/img/trip-italy.jpg" alt="Alpes & Dolomitas" />
+          </div>
+          <div class="card-body">
+            <div class="card-loc">
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+              </span>
+              <span>Itália</span>
+            </div>
+            <h3 class="card-title">Alpes & Dolomitas</h3>
+            <div class="card-date">2026 (data a definir)</div>
+          </div>
+        </a>
       </div>
-    </a>
+    </div>
+  </section>
 
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="">
-      <div class="card-content">
-        <h2>MotoGP Espanha</h2>
-        <p>Espanha · Agosto 2026</p>
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Como Funciona</h2>
+
+      <div class="how">
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+          </div>
+          <h3>Rotas Curadas</h3>
+          <p>Roteiros pensados para mostrar as estradas mais icônicas e os melhores cenários.</p>
+        </div>
+
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-4 6c-4.4 0-8 2-8 4.5V23h16v-1.5C20 19 16.4 17 12 17Z"/></svg>
+          </div>
+          <h3>Grupos Pequenos</h3>
+          <p>Experiência mais íntima e flexível, com atenção real ao grupo durante toda a viagem.</p>
+        </div>
+
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.7 9 10 5.2-.3 9-5 9-10V6l-9-4Zm0 17.9c-3.6-.4-6-3.9-6-7.9V7.3L12 4.9l6 2.4V12c0 4-2.4 7.5-6 7.9Z"/></svg>
+          </div>
+          <h3>Experiência Premium</h3>
+          <p>Hospedagens selecionadas, gastronomia local e suporte especializado do início ao fim.</p>
+        </div>
       </div>
-    </a>
+    </div>
+  </section>
 
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="">
-      <div class="card-content">
-        <h2>Enduro GP</h2>
-        <p>Portugal · 2026</p>
-      </div>
-    </a>
+  <!-- CTA / CONTACT -->
+  <section id="contact" class="cta">
+    <div class="container cta-inner">
+      <h2>Pronto para pilotar?</h2>
+      <p>Fale com a gente para receber detalhes, disponibilidade e próximos passos.</p>
 
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1520974735194-6c5a1f43b9a1" alt="">
-      <div class="card-content">
-        <h2>MXON</h2>
-        <p>França · 2026</p>
-      </div>
-    </a>
+      <a class="btn-whats"
+         href="https://wa.me/5531988292691"
+         target="_blank" rel="noopener"
+         aria-label="Contato via WhatsApp">
+        <span class="wa-ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M19.1 17.7c-.2-.1-1.2-.6-1.4-.7s-.4-.1-.6.1-.7.7-.8.8-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.4-1.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.1.1-.3 0-.5s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.2-.5 1.4-1 .2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3z"/>
+            <path d="M26.7 5.4A13 13 0 0 0 4.6 22.6L3 29l6.6-1.7A13 13 0 0 0 29 16a13 13 0 0 0-2.3-10.6zM16 26.7c-2 0-3.9-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.7z"/>
+          </svg>
+        </span>
+        Contato via WhatsApp
+      </a>
 
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66" alt="">
-      <div class="card-content">
-        <h2>Tour Alpes</h2>
-        <p>Itália · 2026</p>
-      </div>
-    </a>
-
-    <a href="#" class="card">
-      <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" alt="">
-      <div class="card-content">
-        <h2>Tour Pirineus</h2>
-        <p>Espanha · 2026</p>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-<footer>
-  © GUTOUR – Moto World Adventure
-</footer>
+      <div class="footer">© 2026 GUTOUR. Todos os direitos reservados.</div>
+    </div>
+  </section>
 
 </body>
 </html>
