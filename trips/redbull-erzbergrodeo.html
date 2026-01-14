@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Bull Erzbergrodeo | GUTOUR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #0b1a2b;
+      color: #ffffff;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      padding: 20px 40px;
+      background: #081526;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header strong {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .hero {
+      background: linear-gradient(
+        rgba(8,21,38,0.7),
+        rgba(8,21,38,0.9)
+      ),
+      url("https://images.unsplash.com/photo-1606220838315-056192d5e927") center/cover;
+      text-align: left;
+    }
+
+    .location {
+      color: #ff6a00;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .date {
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 900px;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .itinerary div {
+      background: #102744;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .included li::before {
+      content: "✓ ";
+      color: #ff6a00;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .cta {
+      text-align: center;
+      background: #081526;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 30px;
+      background: #ff6a00;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <strong>GUTOUR</strong>
+  <a href="../index.html">← Voltar para viagens</a>
+</header>
+
+<section class="hero">
+  <div class="location">📍 Áustria</div>
+  <h1>Red Bull Erzbergrodeo</h1>
+  <div class="date">02 de Junho de 2026</div>
+</section>
+
+<section>
+  <h2>Sobre a Experiência</h2>
+  <p>
+    Viva de perto o maior evento de Hard Enduro do mundo. O Red Bull Erzbergrodeo
+    reúne os melhores pilotos do planeta em uma das minas mais desafiadoras já
+    enfrentadas por motociclistas.
+  </p>
+</section>
+
+<section>
+  <h2>Roteiro</h2>
+  <div class="itinerary">
+    <div><strong>Dia 1:</strong> Chegada à Áustria e briefing</div>
+    <div><strong>Dia 2:</strong> Classificatórias e eventos paralelos</div>
+    <div><strong>Dia 3:</strong> Prova principal do Erzbergrodeo</div>
+    <div><strong>Dia 4:</strong> Experiências locais e retorno</div>
+  </div>
+</section>
+
+<section class="two-columns">
+  <div>
+    <h2>O que está incluído</h2>
+    <ul class="included">
+      <li>Hospedagem premium</li>
+      <li>Transporte local</li>
+      <li>Acesso ao evento</li>
+      <li>Equipe de apoio GUTOUR</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>O que não está incluído</h2>
+    <ul>
+      <li>Passagens aéreas</li>
+      <li>Alimentação fora do pacote</li>
+      <li>Despesas pessoais</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Interessado em participar?</h2>
+  <a href="https://wa.me/5531988292691" target="_blank">
+    Falar no WhatsApp
+  </a>
+</section>
+
+<footer>
+  © 2026 GUTOUR – Moto World Adventure
+</footer>
+
+</body>
+</html>
