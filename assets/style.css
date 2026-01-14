@@ -221,3 +221,187 @@ body{
   color: rgba(255,255,255,.45);
   font-size: 14px;
 }
+/* =========================================================
+   TRIP PAGE — ajustes Erzberg
+   Cole no final do assets/style.css
+========================================================= */
+
+.section-title-left { text-align: left; }
+.section-subtitle-left { text-align: left; max-width: 780px; margin-left: 0; margin-right: auto; }
+
+.trip-hero { position: relative; min-height: 78vh; display: flex; align-items: flex-end; }
+.trip-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.trip-hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,14,26,.40) 0%, rgba(8,14,26,.78) 55%, rgba(8,14,26,.92) 100%); }
+.trip-hero-content { position: relative; padding: 110px 0 46px; }
+
+.back-link { display: inline-flex; gap: 8px; align-items: center; color: rgba(255,255,255,.75); text-decoration: none; font-weight: 600; }
+.back-link:hover { color: #fff; }
+
+.trip-hero-meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 12px 0 16px; color: rgba(255,255,255,.75); font-weight: 600; }
+.meta-item { display: inline-flex; gap: 8px; align-items: center; }
+.meta-sep { opacity: .5; }
+.trip-hero-meta svg { width: 18px; height: 18px; fill: currentColor; opacity: .9; }
+.cal svg { width: 18px; height: 18px; }
+
+.trip-hero-title { font-size: clamp(34px, 5vw, 56px); line-height: 1.05; margin: 0 0 14px; }
+.trip-hero-sub { max-width: 880px; color: rgba(255,255,255,.82); font-size: 18px; margin: 0 0 18px; }
+
+.trip-hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-secondary {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 18px; border-radius: 12px; text-decoration: none; font-weight: 800;
+  border: 1px solid rgba(255,255,255,.18);
+  color: #fff; background: rgba(255,255,255,.06);
+}
+.btn-secondary:hover { background: rgba(255,255,255,.10); }
+
+.trip-main { background: transparent; }
+
+/* Aproximar "Sobre" e "Roteiro" */
+.trip-section-tight { padding-top: 44px !important; padding-bottom: 44px !important; }
+@media (min-width: 900px){
+  .trip-section-tight { padding-top: 40px !important; padding-bottom: 40px !important; }
+}
+
+.trip-two-col, .two-col {
+  display: grid; gap: 18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px){
+  .trip-two-col, .two-col { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
+
+.trip-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.20);
+}
+
+.trip-highlight {
+  background: linear-gradient(180deg, rgba(255,112,21,.12), rgba(255,255,255,.04));
+  border-color: rgba(255,112,21,.20);
+}
+
+.trip-card-title { margin: 0 0 10px; font-size: 18px; }
+.trip-text { margin: 0 0 12px; color: rgba(255,255,255,.84); line-height: 1.7; }
+.trip-text-muted { color: rgba(255,255,255,.70); margin-bottom: 0; }
+.muted { color: rgba(255,255,255,.68); }
+.center { text-align: center; }
+
+.trip-list { margin: 10px 0 0; padding-left: 18px; color: rgba(255,255,255,.84); }
+.trip-list li { margin: 8px 0; }
+
+/* Accordion */
+.accordion details {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 14px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 800;
+  color: rgba(255,255,255,.92);
+  display: flex; gap: 10px; align-items: center;
+}
+.accordion summary::-webkit-details-marker { display: none; }
+.acc-day {
+  background: rgba(255,112,21,.14);
+  border: 1px solid rgba(255,112,21,.22);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+}
+.acc-body { padding: 0 16px 16px; color: rgba(255,255,255,.82); line-height: 1.7; }
+
+/* Inclusos / Não inclusos */
+.checklist, .xlist { list-style: none; padding: 0; margin: 14px 0 0; }
+.checklist li, .xlist li { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0; color: rgba(255,255,255,.86); line-height: 1.6; }
+
+.check {
+  width: 22px; height: 22px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(255,112,21,.18);
+  border: 1px solid rgba(255,112,21,.30);
+  color: #ff7015;
+  flex: 0 0 22px;
+  font-weight: 900;
+}
+
+.xmark {
+  width: 22px; height: 22px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.08);              /* cinza mais escuro p/ contraste */
+  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(255,255,255,.72);
+  flex: 0 0 22px;
+  font-weight: 900;
+}
+
+.note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.03);
+  border: 1px dashed rgba(255,255,255,.14);
+  color: rgba(255,255,255,.76);
+}
+
+/* Investimento */
+.price-box {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.20);
+  max-width: 900px;
+}
+.price-main { font-size: 52px; font-weight: 900; line-height: 1; }
+.price-sub { margin-top: 6px; color: rgba(255,255,255,.70); font-weight: 700; }
+
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 18px 0 14px;
+}
+@media (min-width: 860px){
+  .price-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+.price-item {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+  padding: 14px;
+}
+.price-label { color: rgba(255,255,255,.70); font-weight: 700; }
+.price-val { margin-top: 6px; font-size: 18px; font-weight: 900; }
+
+/* Galeria 2x2 - tudo mesmo formato */
+.gallery-2x2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+@media (min-width: 860px){
+  .gallery-2x2 { grid-template-columns: 1fr 1fr; }
+}
+.gallery-2x2 img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+@media (min-width: 1100px){
+  .gallery-2x2 img { height: 290px; }
+}
