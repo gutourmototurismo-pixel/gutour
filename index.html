@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GUTOUR – Moto World Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050b1e;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #ff6a2a;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #0b1230;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #cfd3ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>GUTOUR</h1>
+  <p>Moto World Adventure</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+      <div class="card-content">
+        <h2>Red Bull Erzbergrodeo</h2>
+        <p>Áustria · Junho 2026</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="">
+      <div class="card-content">
+        <h2>MotoGP Espanha</h2>
+        <p>Espanha · Agosto 2026</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="">
+      <div class="card-content">
+        <h2>Enduro GP</h2>
+        <p>Portugal · 2026</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1520974735194-6c5a1f43b9a1" alt="">
+      <div class="card-content">
+        <h2>MXON</h2>
+        <p>França · 2026</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66" alt="">
+      <div class="card-content">
+        <h2>Tour Alpes</h2>
+        <p>Itália · 2026</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" alt="">
+      <div class="card-content">
+        <h2>Tour Pirineus</h2>
+        <p>Espanha · 2026</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  © GUTOUR – Moto World Adventure
+</footer>
+
+</body>
+</html>
