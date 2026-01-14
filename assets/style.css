@@ -410,3 +410,30 @@ body{
   width: auto;
   display: block;
 }
+/* ===== FIX LOGO NO TOPO (override) ===== */
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* Isso neutraliza regras globais tipo img{width:100%} */
+.topbar .brand .logo {
+  width: auto !important;
+  height: 44px !important;   /* ajuste aqui: 36–60 */
+  max-height: 44px !important;
+  max-width: 220px !important; /* evita logo enorme */
+  display: block;
+  object-fit: contain;
+  transform: none !important;  /* caso tenha algum rotate/transforms */
+}
+
+/* Mobile: deixa um pouco menor */
+@media (max-width: 520px) {
+  .topbar .brand .logo {
+    height: 38px !important;
+    max-height: 38px !important;
+    max-width: 190px !important;
+  }
+}
