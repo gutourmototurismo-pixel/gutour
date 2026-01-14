@@ -12,7 +12,11 @@
   <!-- NAV -->
   <header class="topbar">
     <div class="container nav">
-      <div class="brand">GUTOUR</div>
+      <!-- LOGO (imagem) -->
+      <a class="brand" href="./index.html" aria-label="GUTOUR - Página inicial">
+        <img src="assets/img/logo-gutour.png" alt="GUTOUR" class="logo" />
+      </a>
+
       <nav class="navlinks">
         <a href="#trips">Trips</a>
         <a href="#contact">Contact</a>
@@ -22,6 +26,7 @@
 
   <!-- HERO -->
   <section class="hero">
+    <!-- FOTO DO BANNER PRINCIPAL -->
     <img class="hero-bg" src="assets/img/hero.jpg" alt="Estradas e montanhas na Europa" />
     <div class="hero-overlay"></div>
 
@@ -30,7 +35,7 @@
       <p class="hero-subtitle">Viagens de Moto Premium pela Europa</p>
       <p class="hero-desc">Rotas icônicas, grupos pequenos, experiências selecionadas</p>
 
-      <a class="btn-primary" href="#trips">Ver Viagens</a>
+      <a class="btn-primary" href="#trips" aria-label="Ver viagens">Ver Viagens</a>
     </div>
   </section>
 
@@ -38,23 +43,19 @@
   <section id="trips" class="section">
     <div class="container">
       <h2 class="section-title">Nossas Viagens</h2>
-      <p class="section-subtitle">
-        Roteiros cuidadosamente desenhados pelos cenários mais espetaculares da Europa
-      </p>
+      <p class="section-subtitle">Roteiros cuidadosamente desenhados pelos cenários mais espetaculares da Europa</p>
 
       <div class="grid">
 
         <!-- 1 -->
-        <a class="card" href="trips/redbull-erzbergrodeo.html">
+        <a class="card" href="./trips/redbull-erzbergrodeo.html" aria-label="RedBull Erzbergrodeo">
           <div class="card-media">
-            <img src="assets/img/trip-erzberg.jpg" alt="RedBull Erzbergrodeo" />
+            <img src="assets/img/trip-1-erzberg.jpg" alt="RedBull Erzbergrodeo" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>Áustria</span>
             </div>
@@ -64,16 +65,14 @@
         </a>
 
         <!-- 2 -->
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="Enduro GP">
           <div class="card-media">
-            <img src="assets/img/trip-endurogp.jpg" alt="Enduro GP" />
+            <img src="assets/img/trip-2-endurogp.jpg" alt="Enduro GP" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>Portugal</span>
             </div>
@@ -83,16 +82,14 @@
         </a>
 
         <!-- 3 -->
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="RedBull Romaniacs">
           <div class="card-media">
-            <img src="assets/img/trip-romaniacs.jpg" alt="RedBull Romaniacs" />
+            <img src="assets/img/trip-3-romaniacs.jpg" alt="RedBull Romaniacs" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>Romênia</span>
             </div>
@@ -102,16 +99,14 @@
         </a>
 
         <!-- 4 -->
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="Moto GP">
           <div class="card-media">
-            <img src="assets/img/trip-motogp.jpg" alt="Moto GP" />
+            <img src="assets/img/trip-4-motogp.jpg" alt="Moto GP" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>Espanha</span>
             </div>
@@ -121,16 +116,14 @@
         </a>
 
         <!-- 5 -->
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="MX ON Motocross das Nações">
           <div class="card-media">
-            <img src="assets/img/trip-mxon.jpg" alt="MX ON Motocross das Nações" />
+            <img src="assets/img/trip-5-mxon.jpg" alt="MX ON Motocross das Nações" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>França</span>
             </div>
@@ -140,16 +133,14 @@
         </a>
 
         <!-- 6 -->
-        <a class="card" href="#">
+        <a class="card" href="#" aria-label="Alpes & Dolomitas">
           <div class="card-media">
-            <img src="assets/img/trip-italy.jpg" alt="Alpes & Dolomitas" />
+            <img src="assets/img/trip-6-alpesdolomitas.jpg" alt="Alpes & Dolomitas" />
           </div>
           <div class="card-body">
             <div class="card-loc">
-              <span class="pin">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/>
-                </svg>
+              <span class="pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
               </span>
               <span>Itália</span>
             </div>
@@ -162,15 +153,55 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Como Funciona</h2>
+
+      <div class="how">
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+          </div>
+          <h3>Rotas Curadas</h3>
+          <p>Roteiros pensados para mostrar as estradas mais icônicas e os melhores cenários.</p>
+        </div>
+
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Zm-4 6c-4.4 0-8 2-8 4.5V23h16v-1.5C20 19 16.4 17 12 17Z"/></svg>
+          </div>
+          <h3>Grupos Pequenos</h3>
+          <p>Experiência mais íntima e flexível, com atenção real ao grupo durante toda a viagem.</p>
+        </div>
+
+        <div class="how-item">
+          <div class="how-ico">
+            <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.7 9 10 5.2-.3 9-5 9-10V6l-9-4Zm0 17.9c-3.6-.4-6-3.9-6-7.9V7.3L12 4.9l6 2.4V12c0 4-2.4 7.5-6 7.9Z"/></svg>
+          </div>
+          <h3>Experiência Premium</h3>
+          <p>Hospedagens selecionadas, gastronomia local e suporte especializado do início ao fim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
   <section id="contact" class="cta">
     <div class="container cta-inner">
       <h2>Pronto para pilotar?</h2>
       <p>Fale com a gente para receber detalhes, disponibilidade e próximos passos.</p>
 
       <a class="btn-whats"
-         href="https://wa.me/5531988292691"
-         target="_blank" rel="noopener">
+         href="https://wa.me/5531988932691"
+         target="_blank" rel="noopener"
+         aria-label="Contato via WhatsApp">
+        <span class="wa-ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M19.1 17.7c-.2-.1-1.2-.6-1.4-.7s-.4-.1-.6.1-.7.7-.8.8-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7 0 0 1-1.4-1.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.1.1-.3 0-.5s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.2-.5 1.4-1 .2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3z"/>
+            <path d="M26.7 5.4A13 13 0 0 0 4.6 22.6L3 29l6.6-1.7A13 13 0 0 0 29 16a13 13 0 0 0-2.3-10.6zM16 26.7c-2 0-3.9-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.7z"/>
+          </svg>
+        </span>
         Contato via WhatsApp
       </a>
 
