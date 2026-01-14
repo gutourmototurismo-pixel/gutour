@@ -43,9 +43,9 @@ body{
 }
 .topbar .brand .logo{
   width:auto !important;
-  height:44px !important;      /* ajuste aqui: 36–60 */
-  max-height:44px !important;
-  max-width:220px !important;  /* evita logo enorme */
+  height:64px !important;      /* ajuste aqui: 36–60 */
+  max-height:64px !important;
+  max-width:260px !important;  /* evita logo enorme */
   display:block;
   object-fit:contain;
   transform:none !important;   /* evita qualquer rotate/scale */
