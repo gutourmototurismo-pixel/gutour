@@ -9,345 +9,180 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="topbar">
-    <div class="container nav">
-      <!-- LOGO (imagem) -->
-      <a class="brand" href="../index.html" aria-label="Voltar para a página inicial">
-        <img src="../assets/img/logo-gutour.png" alt="GUTOUR" class="logo" />
-      </a>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/logo-gutour.png" alt="GUTOUR" class="logo" />
+    </a>
+    <nav class="navlinks">
+      <a href="../index.html#trips">Viagens</a>
+      <a href="../index.html#contact">Contato</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="navlinks">
-        <a href="../index.html#trips">Viagens</a>
-        <a href="../index.html#contact">Contato</a>
-      </nav>
+<section class="trip-hero">
+  <img class="trip-hero-bg" src="../assets/img/trip-erzberg.jpg" alt="RedBull Erzbergrodeo" />
+  <div class="trip-hero-overlay"></div>
+
+  <div class="container trip-hero-content">
+    <a class="back-link" href="../index.html#trips">← Voltar para Viagens</a>
+
+    <div class="trip-hero-meta">
+      <span class="meta-item">Áustria</span>
+      <span class="meta-sep">•</span>
+      <span class="meta-item">01 a 08 de Junho de 2026</span>
     </div>
-  </header>
 
-  <!-- HERO (TRIP) -->
-  <section class="trip-hero">
-    <img class="trip-hero-bg" src="../assets/img/trip-erzberg.jpg" alt="RedBull Erzbergrodeo" />
-    <div class="trip-hero-overlay"></div>
+    <h1 class="trip-hero-title">RedBull Erzbergrodeo</h1>
+    <p class="trip-hero-sub">
+      Uma jornada premium pelo coração do motociclismo off-road europeu.
+    </p>
 
-    <div class="container trip-hero-content">
-      <a class="back-link" href="../index.html#trips" aria-label="Voltar para Viagens">
-        ← Voltar para Viagens
-      </a>
-
-      <div class="trip-hero-meta">
-        <span class="meta-item">
-          <span class="pin" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 22s7-5.3 7-12a7 7 0 1 0-14 0c0 6.7 7 12 7 12Zm0-9.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
-          </span>
-          Áustria
-        </span>
-
-        <span class="meta-sep">•</span>
-
-        <span class="meta-item">
-          <span class="cal" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 6H6v12h14V8z"/></svg>
-          </span>
-          01 a 08 de Junho de 2026
-        </span>
-      </div>
-
-      <h1 class="trip-hero-title">RedBull Erzbergrodeo</h1>
-      <p class="trip-hero-sub">
-        Uma jornada premium pelo coração do motociclismo off-road europeu, com o maior Hard Enduro do mundo como ponto alto.
-      </p>
-
-      <div class="trip-hero-actions">
-        <a class="btn-primary" href="#itinerario">Ver Roteiro</a>
-        <a class="btn-secondary" href="#investimento">Ver Investimento</a>
-      </div>
+    <div class="trip-hero-actions">
+      <a class="btn-primary" href="#itinerario">Ver Roteiro</a>
+      <a class="btn-secondary" href="#investimento">Ver Investimento</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTENT -->
-  <main class="trip-main">
+<main class="trip-main">
 
-    <!-- ABOUT (mais próximo do roteiro) -->
-    <section class="section trip-section-tight" id="sobre">
-      <div class="container">
-        <h2 class="section-title section-title-left">Sobre a experiência</h2>
+<!-- SOBRE -->
+<section class="section trip-section-tight">
+  <div class="container">
+    <h2 class="section-title section-title-left">Sobre a experiência</h2>
 
-        <div class="trip-two-col">
-          <div class="trip-card">
-            <p class="trip-text">
-              Esta viagem foi desenhada para quem quer viver a Europa em duas rodas com conforto, suporte e experiências exclusivas —
-              culminando com <strong>2 dias de acesso ao Erzbergrodeo</strong>, considerado o maior evento de hard enduro do mundo.
-            </p>
-
-            <p class="trip-text">
-              Além das estradas alpinas e paisagens cinematográficas, o roteiro inclui momentos únicos no universo KTM e Red Bull:
-              <strong>visita à fábrica da KTM</strong>, <strong>KTM Motohall</strong> e o <strong>Red Bull Hangar</strong>.
-              Tudo em grupo reduzido (até 8 pilotos) para maximizar a experiência e a flexibilidade.
-            </p>
-
-            <p class="trip-text trip-text-muted">
-              <strong>Dica:</strong> É possível levar acompanhante na garupa (sob organização prévia).
-            </p>
-          </div>
-
-          <div class="trip-card trip-highlight">
-            <h3 class="trip-card-title">Resumo rápido</h3>
-            <ul class="trip-list">
-              <li>Grupo pequeno: até 8 pilotos</li>
-              <li>Moto KTM 890 com seguro total e KM livre</li>
-              <li>2 dias de Erzbergrodeo</li>
-              <li>Roteiro pelos Alpes + experiências KTM/Red Bull</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUMO DO TOUR (NOVO - SEM ABAS, COM IMAGEM AO LADO) -->
-    <section class="section trip-section-tight" id="resumo-tour">
-      <div class="container">
-        <h2 class="section-title section-title-left">Resumo do tour</h2>
-
-        <!-- usa a grade padrão do site -->
-        <div class="two-col">
-          <!-- COLUNA ESQUERDA: LINHAS -->
-          <div class="trip-card">
-            <ul class="trip-list">
-              <li><strong>Duração:</strong> 8 dias</li>
-              <li><strong>Distância total:</strong> ~1.300 km</li>
-              <li><strong>Média por dia:</strong> ~200 km</li>
-              <li>
-                <strong>Rota:</strong>
-                Munique → Andorf → Salzburg → Innsbruck → Cortina d’Ampezzo → Spielberg → Eisenerz → Andorf → Munique
-              </li>
-              <li>
-                <strong>Destaques:</strong>
-                Erzbergrodeo (2 dias), KTM Factory, KTM Motohall, Red Bull Hangar, Timmelsjoch + Dolomitas, Red Bull Ring
-              </li>
-              <li><strong>Nível de dificuldade:</strong> Baixo (asfalto / touring)</li>
-            </ul>
-
-            <p class="trip-text trip-text-muted" style="margin-top:12px;">
-              <strong>Obs.:</strong> o mapa ao lado é apenas uma imagem (print).
-            </p>
-          </div>
-
-          <!-- COLUNA DIREITA: IMAGEM -->
-          <div class="trip-card">
-            <!-- Troque o arquivo pelo seu print -->
-            <img
-              src="../assets/img/map-erzberg-print.jpg"
-              alt="Mapa do tour (imagem ilustrativa)"
-              style="width:100%; height:auto; display:block; border-radius:14px;"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ITINERÁRIO -->
-    <section class="section trip-section-tight" id="itinerario">
-      <div class="container">
-        <h2 class="section-title section-title-left">Roteiro dia a dia</h2>
-        <p class="section-subtitle section-subtitle-left">
-          Programação completa de 01 a 08 de Junho de 2026.
+    <div class="trip-two-col">
+      <div class="trip-card">
+        <p class="trip-text">
+          Esta viagem foi desenhada para quem quer viver a Europa em duas rodas com conforto,
+          culminando com <strong>2 dias de acesso ao Erzbergrodeo</strong>.
         </p>
-
-        <div class="accordion">
-          <details open>
-            <summary><span class="acc-day">Dia 1</span> Munique — Museu da BMW</summary>
-            <div class="acc-body">
-              Dia de chegada e ambientação. Visita ao Museu da BMW para entrar no clima das máquinas e da história do motociclismo.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 2</span> Munique → Andorf → Salzburg (KTM + Motohall + Hangar)</summary>
-            <div class="acc-body">
-              Transfer em van até Andorf (~200 km) para retirada das motos. Visita exclusiva: Fábrica da KTM, KTM Motohall e Red Bull Hangar.
-              Ao final, deslocamento e pernoite em Salzburg.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 3</span> Salzburg → Innsbruck (+200 km)</summary>
-            <div class="acc-body">
-              Dia de estrada pelas montanhas, com paradas estratégicas para alimentação e contemplação dos cenários ao longo do trajeto.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 4</span> Innsbruck → Cortina d’Ampezzo (Timmelsjoch + Dolomitas)</summary>
-            <div class="acc-body">
-              Um dos dias mais marcantes do roteiro: passagem pelo Timmelsjoch e pelas Dolomitas, com altitudes que chegam a ~2.500 m.
-              Chegada em Cortina d’Ampezzo.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 5</span> Cortina d’Ampezzo → Spielberg (Red Bull Ring)</summary>
-            <div class="acc-body">
-              Estradas alpinas e cenários impressionantes. Destino: Spielberg, onde fica o icônico circuito Red Bull Ring.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 6</span> Spielberg → Eisenerz (Erzbergrodeo)</summary>
-            <div class="acc-body">
-              Chegada à região de Eisenerz, onde ocorre o Erzbergrodeo. Imersão no clima do evento e preparação para os dias de prova.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 7</span> Erzbergrodeo — dia do evento</summary>
-            <div class="acc-body">
-              Dia inteiro vivendo o Erzbergrodeo: atmosfera do evento, pilotos, bastidores e o epicentro do hard enduro mundial.
-            </div>
-          </details>
-
-          <details>
-            <summary><span class="acc-day">Dia 8</span> Eisenerz → Andorf → Munique (retorno)</summary>
-            <div class="acc-body">
-              Retorno para Andorf (devolução das motos) e transfer em van até Munique (~200 km). Encerramento da experiência.
-            </div>
-          </details>
-        </div>
       </div>
-    </section>
 
-    <!-- INCLUSO / NÃO INCLUSO -->
-    <section class="section" id="inclusos">
-      <div class="container">
-        <div class="two-col">
-          <div class="trip-card">
-            <h2 class="section-title section-title-left">O que inclui</h2>
-            <ul class="checklist">
-              <li><span class="check">✓</span> Moto KTM 890 com malas, KM livre e seguro total</li>
-              <li><span class="check">✓</span> Ingresso para 2 dias de Erzbergrodeo</li>
-              <li><span class="check">✓</span> Transfer em van: Munique → Andorf / Andorf → Munique</li>
-              <li><span class="check">✓</span> Entrada no KTM Motohall</li>
-              <li><span class="check">✓</span> Hotéis (quarto duplo) <span class="muted">(individual sob cotação)</span></li>
-              <li><span class="check">✓</span> Kit promocional com brindes (inclui camisetas)</li>
-              <li><span class="check">✓</span> Guia durante todo o percurso</li>
-            </ul>
-          </div>
+      <div class="trip-card trip-highlight">
+        <h3 class="trip-card-title">Resumo rápido</h3>
+        <ul class="trip-list">
+          <li>Até 8 pilotos</li>
+          <li>Moto KTM 890 com seguro total</li>
+          <li>2 dias de Erzbergrodeo</li>
+          <li>Estradas alpinas icônicas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="trip-card">
-            <h2 class="section-title section-title-left">O que não inclui</h2>
-            <ul class="xlist">
-              <li><span class="xmark">✕</span> GPS e dados móveis (cada participante deve ter o seu e saber usar)</li>
-              <li><span class="xmark">✕</span> Gasolina</li>
-              <li><span class="xmark">✕</span> Alimentação (café da manhã, almoço e jantar)</li>
-              <li><span class="xmark">✕</span> Passagens aéreas e deslocamentos ferroviários até/da Europa</li>
-              <li><span class="xmark">✕</span> Seguro pessoal de viagem <span class="muted">(obrigatório, com cobertura para motociclismo)</span></li>
-              <li><span class="xmark">✕</span> Equipamentos pessoais (capacete, jaqueta, luvas, botas, EPI)</li>
-            </ul>
+<!-- ===================== -->
+<!-- RESUMO DO TOUR (FINAL) -->
+<!-- ===================== -->
+<section class="section trip-section-tight">
+  <div class="container">
+    <h2 class="section-title section-title-left">Resumo do tour</h2>
 
-            <div class="note">
-              <strong>Opcional:</strong> disponibilizamos empresa parceira para compra das passagens.
-            </div>
+    <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:24px;">
+      
+      <!-- TABELA -->
+      <div style="border:1px solid #e6e6e6;border-radius:12px;overflow:hidden;">
+        
+        <!-- linha -->
+        <div style="display:grid;grid-template-columns:60px 1fr;border-bottom:1px solid #eee;padding:16px;">
+          <div>📅</div>
+          <div>
+            <strong>Duração</strong><br>
+            8 dias
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CORTESIA + DETALHES -->
-    <section class="section section-alt" id="beneficios">
-      <div class="container">
-        <div class="two-col">
-          <div class="trip-card trip-highlight">
-            <h2 class="section-title section-title-left">Cortesia especial</h2>
-            <p class="trip-text">
-              Benefício exclusivo GUTOUR: possibilidade de encomendar produtos <strong>ACERBIS direto no preço de fábrica</strong>,
-              com retirada em <strong>Viena</strong> ao final da viagem.
-            </p>
-            <p class="trip-text trip-text-muted">
-              Ótima oportunidade para adquirir equipamentos premium com o menor preço.
-            </p>
+        <!-- linha -->
+        <div style="display:grid;grid-template-columns:60px 1fr 1fr;border-bottom:1px solid #eee;padding:16px;">
+          <div>🏍️</div>
+          <div>
+            <strong>Distância</strong><br>
+            ~1.300 km
           </div>
-
-          <div class="trip-card">
-            <h2 class="section-title section-title-left">Detalhes importantes</h2>
-            <ul class="trip-list">
-              <li><strong>Grupo limitado:</strong> máximo 8 pilotos (mais exclusividade e atenção ao grupo)</li>
-              <li><strong>Acompanhante:</strong> é possível levar na garupa (sob organização prévia)</li>
-            </ul>
+          <div>
+            <strong>Média/dia</strong><br>
+            ~200 km
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- INVESTIMENTO -->
-    <section class="section" id="investimento">
-      <div class="container">
-        <h2 class="section-title section-title-left">Investimento</h2>
-
-        <div class="price-box">
-          <div class="price-main">€ 4.900</div>
-          <div class="price-sub">por participante</div>
-
-          <div class="price-grid">
-            <div class="price-item">
-              <div class="price-label">Sinal de reserva</div>
-              <div class="price-val">€ 900</div>
-            </div>
-            <div class="price-item">
-              <div class="price-label">Saldo</div>
-              <div class="price-val">€ 4.000</div>
-            </div>
-            <div class="price-item">
-              <div class="price-label">Prazo</div>
-              <div class="price-val">até 15 dias antes</div>
-            </div>
-          </div>
-
-          <div class="muted center">
-            Valor considera hospedagem em <strong>apartamento duplo</strong>. (Individual sob cotação.)
+        <!-- linha -->
+        <div style="display:grid;grid-template-columns:60px 1fr;border-bottom:1px solid #eee;padding:16px;">
+          <div>📍</div>
+          <div>
+            <strong>Rota</strong><br>
+            Munique → Andorf → Salzburg → Innsbruck → Cortina d’Ampezzo → Spielberg → Eisenerz → Andorf → Munique
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- GALERIA (2x2) -->
-    <section class="section" id="galeria">
-      <div class="container">
-        <h2 class="section-title section-title-left">Galeria</h2>
-        <p class="section-subtitle section-subtitle-left">Algumas imagens para entrar no clima da viagem.</p>
-
-        <div class="gallery-2x2">
-          <img src="../assets/img/erzberg-1.jpg" alt="Paisagens e estradas da viagem" />
-          <img src="../assets/img/erzberg-2.jpg" alt="Estradas e montanhas na Áustria" />
-          <img src="../assets/img/erzberg-3.jpg" alt="Motociclistas em rota alpina" />
-          <img src="../assets/img/erzberg-4.jpg" alt="Clima do evento Erzbergrodeo" />
+        <!-- linha -->
+        <div style="display:grid;grid-template-columns:60px 1fr 1fr;border-bottom:1px solid #eee;padding:16px;">
+          <div>⭐</div>
+          <div>
+            <strong>Destaques</strong><br>
+            • Erzbergrodeo (2 dias)<br>
+            • KTM Factory<br>
+            • KTM Motohall
+          </div>
+          <div style="padding-top:22px;">
+            • Red Bull Hangar<br>
+            • Timmelsjoch + Dolomitas<br>
+            • Red Bull Ring
+          </div>
         </div>
+
+        <!-- linha -->
+        <div style="display:grid;grid-template-columns:60px 1fr;padding:16px;">
+          <div>⚙️</div>
+          <div>
+            <strong>Dificuldade</strong><br>
+            Baixa (asfalto / touring)
+          </div>
+        </div>
+
       </div>
-    </section>
 
-    <!-- CTA FINAL -->
-    <section class="cta">
-      <div class="container cta-inner">
-        <h2>Bora com a gente nessa aventura?</h2>
-        <p>Chame no WhatsApp para garantir vaga e receber todos os detalhes.</p>
-
-        <a class="btn-whats"
-           href="https://wa.me/5531988932691"
-           target="_blank" rel="noopener"
-           aria-label="Contato via WhatsApp">
-          <span class="wa-ico" aria-hidden="true">
-            <svg viewBox="0 0 32 32">
-              <path d="M19.1 17.7c-.2-.1-1.2-.6-1.4-.7s-.4-.1-.6.1-.7.7-.8.8-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.4-1.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.1.1-.3 0-.5s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.2-.5 1.4-1 .2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3z"/>
-              <path d="M26.7 5.4A13 13 0 0 0 4.6 22.6L3 29l6.6-1.7A13 13 0 0 0 29 16a13 13 0 0 0-2.3-10.6zM16 26.7c-2 0-3.9-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.7z"/>
-            </svg>
-          </span>
-          Contato via WhatsApp
-        </a>
-
-        <div class="footer">© 2026 GUTOUR. Todos os direitos reservados.</div>
+      <!-- MAPA -->
+      <div style="border:1px solid #e6e6e6;border-radius:12px;padding:16px;">
+        <strong>🗺️ Mapa do tour (imagem ilustrativa)</strong><br><br>
+        <img
+          src="../assets/img/map-erzberg-print.jpg"
+          alt="Mapa do tour"
+          style="width:100%;border-radius:10px;"
+        >
       </div>
-    </section>
 
-  </main>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERÁRIO (INTACTO) -->
+<section class="section trip-section-tight" id="itinerario">
+  <div class="container">
+    <h2 class="section-title section-title-left">Roteiro dia a dia</h2>
+
+    <div class="accordion">
+      <details open>
+        <summary><span class="acc-day">Dia 1</span> Munique</summary>
+        <div class="acc-body">Chegada e ambientação.</div>
+      </details>
+
+      <details>
+        <summary><span class="acc-day">Dia 2</span> KTM + Motohall</summary>
+        <div class="acc-body">Visitas exclusivas.</div>
+      </details>
+
+      <details>
+        <summary><span class="acc-day">Dia 6–7</span> Erzbergrodeo</summary>
+        <div class="acc-body">Vivência completa do evento.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
 
 </body>
 </html>
